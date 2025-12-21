@@ -1,4 +1,4 @@
-export const headerList = [
+export const headerNavList = [
   { label: "Home", link: "#home" },
   { label: "About Me", link: "#about" },
   { label: "What I Do", link: "#services" },
