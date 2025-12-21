@@ -1,3 +1,4 @@
+import Education from "./Education/Education.jsx";
 import Skills from "./Skills.jsx";
 
 export default function Resume() {
@@ -18,36 +19,7 @@ export default function Resume() {
 
         <div className="row gx-5">
           {/* <!-- My Education --> */}
-          <div className="col-md-6">
-            <h2 className="text-6 fw-600 mb-4">My Education</h2>
-            <div className="bg-white border rounded p-4 mb-4">
-              <p className="badge bg-primary text-2 fw-400">2000 - 2004</p>
-              <h3 className="text-5">Computer Science</h3>
-              <p className="text-danger">International University</p>
-              <p className="mb-0">
-                Lisque persius interesset his et, in quot quidam persequeris
-                vim, ad mea essent possim iriure.
-              </p>
-            </div>
-            <div className="bg-white border rounded p-4 mb-4">
-              <p className="badge bg-primary text-2 fw-400">2005 - 2008</p>
-              <h3 className="text-5">Bachelor Degree</h3>
-              <p className="text-danger">University of California</p>
-              <p className="mb-0">
-                Lisque persius interesset his et, in quot quidam persequeris
-                vim, ad mea essent possim iriure.
-              </p>
-            </div>
-            <div className="bg-white border rounded p-4 mb-4">
-              <p className="badge bg-primary text-2 fw-400">2009 - 2012</p>
-              <h3 className="text-5">Master Degree</h3>
-              <p className="text-danger">Harvard University</p>
-              <p className="mb-0">
-                Lisque persius interesset his et, in quot quidam persequeris
-                vim, ad mea essent possim iriure.
-              </p>
-            </div>
-          </div>
+        <Education />
 
           {/* <!-- My Experience --> */}
           <div className="col-md-6">
@@ -92,7 +64,7 @@ export default function Resume() {
               <div
                 className="progress-bar"
                 role="progressbar"
-                style={{width: "65%"}}
+                style={{ width: "65%" }}
                 aria-valuenow={65}
                 aria-valuemin={0}
                 aria-valuemax={100}
@@ -105,7 +77,7 @@ export default function Resume() {
               <div
                 className="progress-bar"
                 role="progressbar"
-                 style={{ width: "95%" }}
+                style={{ width: "95%" }}
                 aria-valuenow={95}
                 aria-valuemin={0}
                 aria-valuemax={100}
@@ -118,7 +90,7 @@ export default function Resume() {
               <div
                 className="progress-bar"
                 role="progressbar"
-                  style={{ width: "80%" }}
+                style={{ width: "80%" }}
                 aria-valuenow={80}
                 aria-valuemin={0}
                 aria-valuemax={100}
@@ -126,47 +98,6 @@ export default function Resume() {
             </div>
           </div>
           <Skills />
-          {/* <div className="col-md-6">
-            <p className="text-dark fw-500 text-start mb-2">
-              React JS <span className="float-end">70%</span>
-            </p>
-            <div className="progress progress-sm mb-4">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                style="width: 70%"
-                aria-valuenow="70"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <p className="text-dark fw-500 text-start mb-2">
-              Angular Js <span className="float-end">60%</span>
-            </p>
-            <div className="progress progress-sm mb-4">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                style="width: 60%"
-                aria-valuenow="60"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <p className="text-dark fw-500 text-start mb-2">
-              Bootstrap <span className="float-end">99%</span>
-            </p>
-            <div className="progress progress-sm mb-4">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                style="width: 99%"
-                aria-valuenow="99"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div> */}
         </div>
         <div className="text-center mt-5">
           <a
