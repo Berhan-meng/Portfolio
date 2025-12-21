@@ -1,4 +1,5 @@
 import Education from "./Education/Education.jsx";
+import Experience from "./Experience/Experience.jsx";
 import Skills from "./Skills.jsx";
 
 export default function Resume() {
@@ -19,39 +20,10 @@ export default function Resume() {
 
         <div className="row gx-5">
           {/* <!-- My Education --> */}
-        <Education />
+          <Education />
 
           {/* <!-- My Experience --> */}
-          <div className="col-md-6">
-            <h2 className="text-6 fw-600 mb-4">My Experience</h2>
-            <div className="bg-white border rounded p-4 mb-4">
-              <p className="badge bg-primary text-2 fw-400">2012 - 2013</p>
-              <h3 className="text-5">Jr. UI UX Designer</h3>
-              <p className="text-danger">Themeforest</p>
-              <p className="mb-0">
-                Lisque persius interesset his et, in quot quidam persequeris
-                vim, ad mea essent possim iriure.
-              </p>
-            </div>
-            <div className="bg-white border rounded p-4 mb-4">
-              <p className="badge bg-primary text-2 fw-400">2014 - 2016</p>
-              <h3 className="text-5">Jr. Product Designer</h3>
-              <p className="text-danger">Dribbble</p>
-              <p className="mb-0">
-                Lisque persius interesset his et, in quot quidam persequeris
-                vim, ad mea essent possim iriure.
-              </p>
-            </div>
-            <div className="bg-white border rounded p-4 mb-4">
-              <p className="badge bg-primary text-2 fw-400">2017 - 2019</p>
-              <h3 className="text-5">Product Designer</h3>
-              <p className="text-danger">Adobe</p>
-              <p className="mb-0">
-                Lisque persius interesset his et, in quot quidam persequeris
-                vim, ad mea essent possim iriure.
-              </p>
-            </div>
-          </div>
+          <Experience />
         </div>
         {/* <!-- My Skills --> */}
         <h2 className="text-6 fw-600 mt-4 mb-4">My Skills</h2>
