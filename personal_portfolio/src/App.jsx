@@ -5,6 +5,7 @@ import Services from "../src/Components/Services/Services.jsx";
 import Resume from "../src/Components/Resume/Resume.jsx";
 import Portfolio from "../src/Components/Portfolio/Portfolio.jsx";
 import Contact from "../src/Components/Contact/Contact.jsx";
+import Footer from "../src/Components/Footer/Footer.jsx";
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
       <Resume />
       <Portfolio />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
