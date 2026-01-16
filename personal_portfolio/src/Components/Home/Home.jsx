@@ -1,32 +1,38 @@
-// export default function Home() {
-//   return (
-//     <section id="home">
-//       <h1>Welcome to My Portfolio</h1>
-//       <p>I am Berhanu Mengesha – Web Developer</p>
-//     </section>
-//   );
-// }
+import { motion } from "framer-motion";
+import Typed from "react-typed";
 
 export default function Home() {
   return (
-    <section id="home">
-      <div className="hero-wrap">
-        <div
-          className="hero-bg"
-          style={{ backgroundImage: "url('/images/bc1.jpg')" }}
-        ></div>
+    <section id="home" style={{ padding: "100px", textAlign: "center" }}>
+      <motion.h1
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        Hello, I'm Berhanu Mengesha
+      </motion.h1>
 
-        <div className="hero-content section d-flex min-vh-100">
-          <div className="container my-auto text-center">
-            <h2 className="text-16 text-white">I'm Berhanu Mengesha</h2>
-            <p className="text-light">Based in Debre Birhan, Ethiopia</p>
+      <Typed
+        strings={[
+          "Frontend Developer",
+          "React Developer",
+          "Public Health Professional",
+        ]}
+        typeSpeed={60}
+        backSpeed={40}
+        loop
+      />
 
-            <a href="#contact" className="btn btn-primary">
-              Hire Me
-            </a>
-          </div>
-        </div>
-      </div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+        style={{ marginTop: 20 }}
+      >
+        <a href="#contact" className="btn">
+          Hire Me
+        </a>
+      </motion.div>
     </section>
   );
 }
