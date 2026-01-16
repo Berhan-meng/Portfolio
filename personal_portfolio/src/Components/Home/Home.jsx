@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Typed from "react-typed";
+import { ReactTyped } from "react-typed";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         Hello, I'm Berhanu Mengesha
       </motion.h1>
 
-      <Typed
+      <ReactTyped
         strings={[
           "Frontend Developer",
           "React Developer",
