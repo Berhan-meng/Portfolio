@@ -1,0 +1,264 @@
+/* About.module.css */
+
+.section {
+  position: relative;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Heading Styles */
+.headingWrapper {
+  position: relative;
+  display: flex;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.headingBackground {
+  font-size: 6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #dee3e4;
+  opacity: 0.4;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .headingBackground {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .headingBackground {
+    font-size: 3rem;
+  }
+}
+
+.headingSeparator {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #20c997, transparent);
+  border: none !important;
+}
+
+/* Main Content */
+.mainHeading {
+  font-size: 2.75rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 2rem;
+  }
+}
+
+.highlight {
+  background: linear-gradient(
+    90deg,
+    #20c997 0%,
+    #1baa80 25%,
+    #20c997 50%,
+    #1baa80 75%,
+    #20c997 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+.description {
+  line-height: 1.8;
+  color: #4c4d4d;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Personal Info */
+.emailLink {
+  color: #20c997;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.emailLink:hover {
+  color: #1baa80;
+  text-decoration: underline;
+}
+
+/* List Styles */
+.listStyle2 {
+  list-style: none;
+  padding: 0;
+}
+
+.listStyle2 li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #4c4d4d;
+}
+
+.listStyle2 li:last-child {
+  border-bottom: none;
+}
+
+/* Buttons */
+.downloadBtn {
+  padding: 0.8rem 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #20c997;
+  border-color: #20c997;
+  color: white;
+}
+
+.downloadBtn:hover {
+  background-color: #1baa80;
+  border-color: #1baa80;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(32, 201, 151, 0.2);
+}
+
+.contactBtn {
+  padding: 0.8rem 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #20c997;
+  border-color: #20c997;
+}
+
+.contactBtn:hover {
+  background-color: #20c997;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(32, 201, 151, 0.2);
+}
+
+/* Animation Classes */
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.slideInLeft {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideInRight {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: slideInRight 0.8s ease forwards;
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 2.25rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .downloadBtn,
+  .contactBtn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contactBtn {
+    margin-left: 0 !important;
+  }
+}
+
+/* Typography Utilities */
+.textPrimary {
+  color: #20c997 !important;
+}
+
+.textDark {
+  color: #252b33 !important;
+}
+
+.textLight {
+  color: #dee3e4 !important;
+}
+
+.fw600 {
+  font-weight: 600 !important;
+}
+
+.fw500 {
+  font-weight: 500 !important;
+}
+
+/* Spacing Utilities */
+.mb3 {
+  margin-bottom: 1rem !important;
+}
+
+.mb4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb5 {
+  margin-bottom: 3rem !important;
+}
