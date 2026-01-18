@@ -1,0 +1,241 @@
+/* Resume.module.css */
+
+/* ===== Main Section ===== */
+.section {
+  position: relative;
+  padding: 2rem 0;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  font-family: 'Inter', sans-serif;
+}
+
+.resume {
+  background-color: #f8f9fa;
+}
+
+/* ===== Container ===== */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .section {
+    padding: 4rem 0;
+  }
+}
+
+/* ===== Heading ===== */
+.headingWrapper {
+  position: relative;
+  display: flex;
+  text-align: center;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.headingBackground {
+  font-size: 6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  margin: 0;
+  line-height: 1;
+  pointer-events: none;
+}
+
+@media (max-width: 991px) {
+  .headingBackground {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .headingBackground {
+    font-size: 3rem;
+  }
+}
+
+.headingSeparator {
+  display: block;
+  margin: 0.5rem auto 0;
+  width: 80px;
+  height: 3px;
+  background-color: #20c997;
+  border-radius: 2px;
+  border: none !important;
+}
+
+/* ===== Grid Layout ===== */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.gx5 {
+  column-gap: 3rem;
+}
+
+/* ===== Download Button ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 50rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid;
+  cursor: pointer;
+  font-size: 1rem;
+
+  padding: 0.625rem 1.25rem;
+    font-size: 0.85rem;
+}
+
+.btn:hover {
+  box-shadow: 0 10px 25px rgba(32, 201, 151, 0.3);
+  background-color: #20c997;
+  color: white;
+  transform: translateY(-2px);
+
+}
+
+.btnOutlineSecondary {
+  color: #6c757d;
+  border-color: #6c757d;
+  background-color: transparent;
+}
+
+.btnOutlineSecondary:hover {
+  color: white;
+  background-color: #20c997;
+  border-color: #20c997;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(32, 201, 151, 0.3);
+}
+
+.btnOutlineSecondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.btnOutlineSecondary:hover::before {
+  left: 100%;
+}
+
+/* ===== Section Title ===== */
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #20c997;
+  border-radius: 2px;
+}
+
+/* ===== Skills Section ===== */
+.skillsRow {
+  margin-top: 3rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 1199px) {
+  .headingBackground {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .headingBackground {
+    font-size: 3.5rem;
+  }
+  
+  .gx5 {
+    column-gap: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .headingBackground {
+    font-size: 2.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .sectionTitle::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .btn {
+    padding: 0.75rem 2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .headingBackground {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* ===== Animation Classes ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animateIn {
+  animation: fadeInUp 0.6s ease forwards;
+}
