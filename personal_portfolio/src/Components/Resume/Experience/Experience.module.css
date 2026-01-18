@@ -1,0 +1,171 @@
+/* Experience.module.css */
+
+/* ===== Experience Section ===== */
+.experienceSection {
+  margin-bottom: 3rem;
+}
+
+/* ===== Title ===== */
+.title {
+font-size: 1.75rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #0D6EFD;
+  border-radius: 2px;
+}
+
+/* ===== Experience Cards ===== */
+.experienceCard {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.experienceCard:hover {
+ transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-color: #0D6EFD;
+}
+
+.experienceCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #0D6EFD;
+  border-radius: 10px 0 0 4px !important; 
+}
+
+/* ===== Year Badge ===== */
+.yearBadge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #0D6EFD;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 50rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+/* ===== Position ===== */
+.position {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* ===== Organization ===== */
+.organization {
+  color: #dc3545;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* ===== Responsibility ===== */
+.responsibility {
+  color: #6c757d;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin: 0;
+}
+/* ===== Description ===== */
+.description {
+  color: #6c757d;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ===== Icon ===== */
+.experienceIcon {
+  position: absolute;
+  top: 1.75rem;
+  right: 1.75rem;
+  color: #20c997;
+  opacity: 0.2;
+  font-size: 1.5rem;
+}
+
+/* ===== Timeline Dot ===== */
+.timelineDot {
+  position: absolute;
+  top: 2rem;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 3px solid #20c997;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 767px) {
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .experienceCard {
+    padding: 1.5rem;
+  }
+  
+  .position {
+    font-size: 1.1rem;
+  }
+  
+  .experienceIcon {
+    display: none;
+  }
+  
+  .timelineDot {
+    left: -6px;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .experienceCard {
+    padding: 1.25rem;
+  }
+  
+  .yearBadge {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+  
+  .position {
+    font-size: 1rem;
+  }
+}
