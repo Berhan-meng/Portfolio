@@ -1,0 +1,304 @@
+.headingWrapper {
+  position: relative;
+  display: flex;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.headingBackground {
+  font-size: 6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #dee3e4;
+  opacity: 0.4;
+  line-height: 1;
+}
+
+/* Testimonials.module.css */
+
+/* ===== Main Section ===== */
+.section {
+  position: relative;
+  padding: 4.5rem 0;
+  overflow: hidden;
+  background-color: #f8f9fa; /* Light background for testimonials */
+  font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 575px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+}
+
+/* ===== Heading ===== */
+.headingWrapper {
+  position: relative;
+  display: flex;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.headingBackground {
+  font-size: 6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  margin: 0;
+  line-height: 1;
+  opacity: 0.4;
+}
+
+@media (max-width: 991px) {
+  .headingBackground {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .headingBackground {
+    font-size: 3rem;
+  }
+}
+
+.headingSeparator {
+  width: 80px;
+  height: 3px;
+  background-color: #20c997;
+  border-radius: 2px;
+  border: none !important;
+}
+
+/* ===== Testimonial Items ===== */
+.testimonialItem {
+  margin-bottom: 1.5rem;
+}
+
+.testimonialCard {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Client Info */
+.clientInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.clientImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #20c997;
+  padding: 2px;
+}
+
+.clientDetails {
+  margin-left: 1rem;
+}
+
+.clientName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.clientRole {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* Testimonial Text */
+.testimonialText {
+  color: #495057;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-style: italic;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.testimonialText::before {
+  content: '"';
+  font-size: 3rem;
+  color: #20c997;
+  opacity: 0.2;
+  position: absolute;
+  left: -0.5rem;
+  top: -1rem;
+  font-family: Georgia, serif;
+}
+
+/* Stars Rating */
+.stars {
+  color: #ffc107;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.starIcon {
+  margin-right: 0.1rem;
+}
+
+/* ===== Owl Carousel Customization ===== */
+.owlCarousel {
+  position: relative;
+}
+
+.owlStage {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.owlItem {
+  padding: 0.5rem;
+}
+
+.owlNav {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.owlPrev,
+.owlNext {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #20c997;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.owlPrev:hover,
+.owlNext:hover {
+  background-color: #1baa80;
+  transform: scale(1.1);
+}
+
+.owlDots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+
+.owlDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #dee2e6;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.owlDot.active {
+  background-color: #20c997;
+  transform: scale(1.2);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 991px) {
+  .testimonialCard {
+    padding: 2rem;
+  }
+  
+  .headingBackground {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonialCard {
+    padding: 1.5rem;
+  }
+  
+  .clientInfo {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .clientDetails {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  
+  .testimonialText {
+    padding-left: 1rem;
+    text-align: center;
+  }
+  
+  .testimonialText::before {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .headingBackground {
+    font-size: 2.5rem;
+  }
+  
+  .testimonialCard {
+    padding: 1.25rem;
+  }
+  
+  .clientImage {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* ===== Animation Classes ===== */
+.fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Quote Icon ===== */
+.quoteIcon {
+  color: #20c997;
+  opacity: 0.1;
+  font-size: 5rem;
+  position: absolute;
+  top: -1rem;
+  left: -0.5rem;
+  z-index: 0;
+}
