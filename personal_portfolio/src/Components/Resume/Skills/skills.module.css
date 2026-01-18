@@ -1,0 +1,124 @@
+/* Skills.module.css */
+/* ===== Skills Container ===== */
+.skillsContainer {
+  margin-bottom: 2rem;
+}
+
+/* ===== Skill Item ===== */
+.skillItem {
+  margin-bottom: 1.75rem;
+}
+
+/* ===== Skill Header ===== */
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.skillName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #343a40;
+  margin: 0;
+}
+
+.skillLevel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #20c997;
+}
+
+/* ===== Progress Bar ===== */
+.progressContainer {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, #20c997, #1baa80);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressBar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* ===== Skill Categories ===== */
+.skillCategory {
+  margin-bottom: 2.5rem;
+}
+
+.categoryTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.categoryTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #20c997;
+  border-radius: 2px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 767px) {
+  .skillItem {
+    margin-bottom: 1.5rem;
+  }
+  
+  .categoryTitle {
+    font-size: 1.1rem;
+  }
+  
+  .skillName {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .skillItem {
+    margin-bottom: 1.25rem;
+  }
+  
+  .progressContainer {
+    height: 6px;
+  }
+}
