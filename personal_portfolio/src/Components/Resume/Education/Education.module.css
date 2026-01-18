@@ -1,0 +1,145 @@
+/* Education.module.css */
+
+/* ===== Education Section ===== */
+.educationSection {
+  margin-bottom: 3rem;
+}
+
+/* ===== Title ===== */
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #20c997;
+  border-radius: 2px;
+}
+
+/* ===== Education Cards ===== */
+.educationCard {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.educationCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-color: #20c997; 
+} 
+
+.educationCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #20c997;
+  border-radius: 4px 0 0 4px;
+}
+
+/* ===== Year Badge ===== */
+.yearBadge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #20c997;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 50rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+/* ===== Field ===== */
+.field {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* ===== Institution ===== */
+.institution {
+  color: #dc3545;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* ===== Description ===== */
+.description {
+  color: #6c757d;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ===== Icon ===== */
+.educationIcon {
+  position: absolute;
+  top: 1.75rem;
+  right: 1.75rem;
+  color: #20c997;
+  opacity: 0.2;
+  font-size: 1.5rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 767px) {
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .educationCard {
+    padding: 1.5rem;
+  }
+  
+  .field {
+    font-size: 1.1rem;
+  }
+  
+  .educationIcon {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .educationCard {
+    padding: 1.25rem;
+  }
+  
+  .yearBadge {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+  
+  .field {
+    font-size: 1rem;
+  }
+}
