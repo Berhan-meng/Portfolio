@@ -1,0 +1,307 @@
+/* ===== Main Section ===== */
+.section {
+  position: relative;
+  padding: 2rem 0;
+  background-color: #f8fafc;
+  font-family: "Inter", sans-serif;
+  color: #0f172a;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* ===== Heading ===== */
+.headingWrapper {
+  position: relative;
+  display: flex;
+  text-align: center;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.headingBackground {
+  font-size: 6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(15, 23, 42, 0.05);
+  width: 100%;
+  margin: 0;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.headingSeparator {
+  display: block;
+  margin: 0.5rem auto 0;
+  width: 80px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #0ea5e9;
+}
+
+/* ===== Layout Grid ===== */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+  row-gap: 3rem;
+}
+
+.contactColumn,
+.formColumn {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.formColumn {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Card ===== */
+.contactInfoCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Titles ===== */
+.contactTitle,
+.socialTitle,
+.formTitle {
+  font-size: 1.5rem;
+  color: #0f172a;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.contactTitle::after,
+.socialTitle::after,
+.formTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #20c997;
+  border-radius: 2px;
+}
+
+/* ===== Contact Info ===== */
+.address {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #334155;
+}
+
+.contactIcon {
+  color: #20c997;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  min-width: 24px;
+}
+
+/* ===== Social Icons ===== */
+.socialList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.socialList a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  color: white;
+  border: 2px solid transparent;
+}
+
+/* Make all icons uniform */
+.socialList a svg {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+/* ===== Platform Colors ===== */
+.socialList a[href*="linkedin"] {
+  background: #0077b5;
+}
+
+.socialList a[href*="facebook"] {
+  background: #1877f2;
+}
+
+.socialList a[href*="github"] {
+  background: #333;
+}
+
+.socialList a[href*="mailto"] {
+  background: #ea4335;
+}
+
+/* ===== TELEGRAM FIX (Main Issue Resolved Here) ===== */
+.socialList a[href*="telegram"] {
+  background: #0088cc;
+  color: white !important;
+}
+
+/* Force Telegram SVG icon to behave like others */
+.socialList a[href*="telegram"] svg {
+  fill: white !important;
+  color: white !important;
+}
+
+/* Hover Effects */
+.socialList a:hover {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.socialList a[href*="telegram"]:hover {
+  background: #006699;
+}
+
+/* ===== Form ===== */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.75rem;
+  row-gap: 1.5rem;
+}
+
+.inputField {
+  flex: 0 0 100%;
+  padding: 0 0.75rem;
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  font-size: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: #20c997;
+  box-shadow: 0 0 0 3px rgba(32, 201, 151, 0.2);
+}
+
+.formTextarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+/* ===== Button ===== */
+.formActions {
+  text-align: center;
+}
+
+.submitButton {
+  padding: 1rem 2.5rem;
+  background-color: #20c997;
+  color: white;
+  border: none;
+  border-radius: 50rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #1baa80;
+  transform: translateY(-3px);
+}
+
+/* ===== Responsive ===== */
+@media (min-width: 768px) {
+  .contactColumn {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+
+  .formColumn {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+
+  .inputField.colXl6 {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .headingBackground {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .headingBackground {
+    font-size: 3rem;
+  }
+
+  .contactTitle,
+  .socialTitle,
+  .formTitle {
+    text-align: center;
+  }
+
+  .contactTitle::after,
+  .socialTitle::after,
+  .formTitle::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .socialList {
+    justify-content: center;
+  }
+}
