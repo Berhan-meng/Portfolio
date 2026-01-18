@@ -1,23 +1,13 @@
-import Navbar from "../src/Components/Navbar/Navbar.jsx";
-import Home from "../src/Components/Home/Home.jsx";
-import About from "../src/Components/About/About.jsx";
-import Services from "../src/Components/Services/Services.jsx";
-import Resume from "../src/Components/Resume/Resume.jsx";
-import Portfolio from "../src/Components/Portfolio/Portfolio.jsx";
-import Contact from "../src/Components/Contact/Contact.jsx";
-import Footer from "../src/Components/Footer/Footer.jsx";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./Routes/AppRouter.jsx";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
   return (
-    <>
-      <Navbar />
-      <Home />
-      <About />
-      <Services />
-      <Resume />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <AppRouter />
+      <ToastContainer position="top-right" />
+    </BrowserRouter>
   );
 }
