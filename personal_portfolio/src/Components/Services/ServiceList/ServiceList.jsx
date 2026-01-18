@@ -1,24 +1,34 @@
 import { serviceList } from "./ServiceList.js";
-
+import styles from "./ServiceList.module.css";
+import { FaProjectDiagram } from "react-icons/fa";
 export default function ServiceList() {
   return (
-    <div className="row">
-      <div className="col-lg-11 mx-auto">
-        <div className="row">
-          {serviceList.map((item, i) => {
-            return (
-              <div key={i} className="col-md-6">
-                <div className="featured-box style-3 mb-5">
-                  <div className="featured-box-icon text-primary bg-white shadow-sm rounded">
-                    {" "}
-                    <i className={item.iconClassName}></i>{" "}
+    <div className={styles.servicesContainer}>
+      <div className={styles.serviceRow}>
+        <div className={styles.serviceGrid}>
+          <div className={styles.serviceRow}>
+            {serviceList.map((item, i) => {
+              return (
+                <div
+                  key={i}
+                  className={styles.serviceItem}
+                  // style={{ '--item-index': i } as React.CSSProperties}
+                >
+                  <div className={styles.featuredBox}>
+                    <div className={styles.featuredBoxIcon}>
+                      <FaProjectDiagram className={item.iconClassName} />
+                    </div>
+                    <h3 className={styles.serviceTitle}>{item.service}</h3>
+                    <p className={styles.serviceDescription}>{item.desc}</p>
+
+                    {/* Optional elements */}
+                    {/* <span className={styles.serviceBadge}>Premium</span> */}
+                    <span className={styles.serviceNumber}>{String(i + 1).padStart(2, '0')}</span> 
                   </div>
-                  <h3>{item.service}</h3>
-                  <p className="mb-0">{item.desc}</p>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
