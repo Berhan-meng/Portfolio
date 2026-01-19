@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 import heroImage from "../../assets/bc1.jpg";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
+import { FaDownload, FaArrowDown } from "react-icons/fa";
+
 
 const MotionLink = motion.create(Link);
 
@@ -111,6 +113,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     aria-label="Download Resume PDF"
                   >
+                    <FaDownload className="me-2" />
                     Download CV
                   </Link>
                 </motion.div>
@@ -128,7 +131,7 @@ export default function Home() {
             aria-label="Go to About Page"
           >
             <span className={styles.animated}>
-              <HiOutlineArrowSmDown title="Back to Top" />
+              <FaArrowDown title="Back to Top" />
             </span>
           </MotionLink>
         </div>

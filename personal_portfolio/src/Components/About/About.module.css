@@ -133,6 +133,8 @@
   background-color: #20c997;
   border-color: #20c997;
   color: white;
+  white-space: nowrap;
+  align-items: center;
 }
 
 .downloadBtn:hover {
@@ -143,7 +145,7 @@
 }
 
 .contactBtn {
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 2rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -153,6 +155,8 @@
   justify-content: center;
   color: #20c997;
   border-color: #20c997;
+  white-space: nowrap;
+  align-items: center;
 }
 
 .contactBtn:hover {
@@ -211,11 +215,11 @@
   .mainHeading {
     font-size: 2.25rem;
   }
-  
+
   .description {
     font-size: 1rem;
   }
-  
+
   .downloadBtn,
   .contactBtn {
     padding: 0.7rem 1.5rem;
@@ -223,7 +227,7 @@
     width: 100%;
     margin-bottom: 0.5rem;
   }
-  
+
   .contactBtn {
     margin-left: 0 !important;
   }

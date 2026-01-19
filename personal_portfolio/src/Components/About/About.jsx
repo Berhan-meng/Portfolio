@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Featured from "./Featured/Featured.jsx";
 import styles from "./About.module.css";
+import { FaEnvelope, FaPhoneAlt, FaDownload } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -119,12 +120,28 @@ export default function About() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: 0.6 }}
                 >
-                  <span className="fw-semibold me-2 text-primary">Email:</span>
+                  <span className="fw-semibold me-2 text-primary">
+                    <FaEnvelope />
+                  </span>
                   <a
-                    href="mailto:contact@berhanu.dev"
+                    href="mailto:berhanumengesha3@gmail.com"
                     className={styles.emailLink}
                   >
-                    contact@berhanu.dev
+                    berhanumengesha3@gmail.com
+                  </a>
+                </motion.li>
+                <motion.li
+                  className="mb-3"
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: 0.6 }}
+                >
+                  <span className="fw-semibold me-2 text-primary">
+                    <FaPhoneAlt />
+                  </span>
+
+                  <a href="tel:+251925637745" className={styles.emailLink}>
+                    +251 925 637 745
                   </a>
                 </motion.li>
 
@@ -137,7 +154,7 @@ export default function About() {
                   <span className="fw-semibold me-2 text-primary">
                     Experience:
                   </span>
-                  2+ Years
+                  9+ Years
                 </motion.li>
 
                 <motion.li
@@ -147,24 +164,24 @@ export default function About() {
                   transition={{ duration: 0.3, delay: 0.8 }}
                 >
                   <span className="fw-semibold me-2 text-primary">From:</span>
-                  Addis Ababa, Ethiopia
+                  Debre Birhan, Ethiopia
                 </motion.li>
               </ul>
 
-              <div className="d-flex flex-wrap gap-2">
+              <div className= {`${styles.resumeWrapper} d-flex flex-wrap gap-2`}>
                 <motion.a
                   href="/resume.pdf"
+                  download="Berhanu_Mengesha_Resume.pdf"
                   className={`${styles.downloadBtn} btn btn-primary rounded-pill`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  download
                 >
-                  <i className="fas fa-download me-2"></i>
+                  <FaDownload className="me-2" />
                   Download CV
                 </motion.a>
 
                 <motion.a
-                  href="#contact"
+                  href="/contact"
                   className={`${styles.contactBtn} btn btn-outline-primary rounded-pill`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

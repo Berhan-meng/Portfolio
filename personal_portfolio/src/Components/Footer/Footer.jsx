@@ -31,7 +31,7 @@ export default function Footer() {
               <p className={styles.copyright}>
                 Copyright © {new Date().getFullYear()}{" "}
                 <a href="#" className={styles.copyrightLink}>
-                  Birhanu Mengesha
+                  Berhanu Mengesha
                 </a>
                 . All Rights Reserved.
               </p>
