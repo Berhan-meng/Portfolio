@@ -137,12 +137,32 @@ export default function Footer() {
             </div>
             <div className={`modal-body ${styles.modalBody}`}>
               <p>
-                Your disclaimer content goes here. This is a placeholder for
-                your actual disclaimer information.
+                This website and all projects showcased within it are created
+                strictly for educational, learning, and portfolio demonstration
+                purposes.
               </p>
               <p>
-                Include any legal disclaimers, liability limitations, and other
-                important notices for your website visitors.
+                Any projects that resemble existing platforms such as Amazon,
+                Netflix, or other well-known services are non-commercial clone
+                applications developed only to demonstrate technical skills in
+                web app development. No trademarks, brands, or copyrighted
+                materials are intended to be misused.
+              </p>
+              <ul>
+                <li>This website does not offer commercial services.</li>
+                <li>No real products, services, or subscriptions are sold.</li>
+                <li>
+                  All logos, brand names, and references belong to their
+                  respective owners.
+                </li>
+                <li>
+                  The projects are not affiliated with or endorsed by any
+                  third-party companies.
+                </li>
+              </ul>
+              <p>
+                The purpose of this website is purely to showcase skills in
+                full-stack programming.
               </p>
             </div>
           </div>
