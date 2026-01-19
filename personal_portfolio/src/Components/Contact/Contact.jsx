@@ -41,7 +41,7 @@ export default function Contact() {
       const response = await axiosBase.post("/contact", formData);
 
       if (response.data.success) {
-        toast.success("Email sent successfully!");
+        toast.success("Message sent successfully!!");
 
         setStatus("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
@@ -149,7 +149,14 @@ export default function Contact() {
                   >
                     <FaTelegram
                       title="Telegram"
-                      style={{ color: "white", background: "#1877F2", width:"40px", height:"38px", borderRadius:"50%", padding:"10px" }}
+                      style={{
+                        color: "white",
+                        background: "#1877F2",
+                        width: "60px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        padding: "10px",
+                      }}
                     />
                   </a>
                 </li>

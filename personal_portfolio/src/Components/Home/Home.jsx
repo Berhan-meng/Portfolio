@@ -59,10 +59,9 @@ export default function Home() {
                 >
                   <ReactTyped
                     strings={[
-                      "Frontend Developer",
-                      "React Developer",
+                      "Cheif Public Health Professional",
+                      "Project Management Proffessional",
                       "Full Stack Developer",
-                      "Public Health Professional",
                     ]}
                     typeSpeed={60}
                     backSpeed={40}
@@ -78,7 +77,7 @@ export default function Home() {
                   transition={{ duration: 0.8, delay: 0.6 }}
                   className="text-light mb-4"
                 >
-                  Based in Addis Ababa, Ethiopia.
+                  Based in Debre Birhan, Ethiopia.
                 </motion.p>
 
                 {/* Main CTA Button */}
@@ -105,7 +104,8 @@ export default function Home() {
                   </Link>
 
                   <Link
-                    to="/resume.pdf" className={styles.btnOutlineLight}
+                    to="/resume.pdf"
+                    className={styles.btnOutlineLight}
                     // className={styles.btnOutlinePrimary}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -128,7 +128,7 @@ export default function Home() {
             aria-label="Go to About Page"
           >
             <span className={styles.animated}>
-             <HiOutlineArrowSmDown title="Back to Top" />
+              <HiOutlineArrowSmDown title="Back to Top" />
             </span>
           </MotionLink>
         </div>
