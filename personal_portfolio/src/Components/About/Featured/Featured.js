@@ -12,11 +12,11 @@ export const featureList = [
   {
     param: "Projects Done",
     init: 0,
-    num: 10,
-  },
-  {
-    param: "Get Awards",
-    init: 0,
     num: 5,
   },
+  // {
+  //   param: "Get Awards",
+  //   init: 0,
+  //   num: 5,
+  // },
 ];

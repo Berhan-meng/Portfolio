@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Featured from "./Featured/Featured.jsx";
 import styles from "./About.module.css";
 import { FaEnvelope, FaPhoneAlt, FaDownload } from "react-icons/fa";
+import resume from "../../assets/Supportive_Docs/Berhanu_Mengesha_Resume.pdf";
 
 export default function About() {
   return (
@@ -74,11 +75,13 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className={styles.description}
             >
-              I'm a passionate developer with a unique background in{" "}
-              <strong>Public Health</strong>, transitioning into software
-              development to build impactful digital solutions that solve
-              real-world problems. My journey combines technical expertise with
-              a deep understanding of user needs.
+              I’m <strong>Berhanu Mengesha</strong>, a{" "}
+              <strong>Full Stack Developer</strong> with a strong foundation in{" "}
+              <strong>Public Health</strong> and{" "}
+              <strong>Project Management</strong>. I transitioned into software
+              development with a clear goal to build practical digital solutions
+              that address real-world challenges, especially in the healthcare
+              sector.
             </motion.p>
 
             <motion.p
@@ -87,11 +90,15 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className={styles.description}
             >
-              I specialize in creating responsive, accessible, and performant
-              web applications using modern technologies like React, Node.js,
-              and cloud platforms. My healthcare background gives me a unique
-              perspective on creating user-centered applications that make a
-              difference in people's lives.
+              With over <strong>nine years</strong> of professional experience,
+              I combine technical expertise with problem-solving and
+              user-centered thinking. I specialize in developing responsive,
+              scalable, and efficient web applications using modern technologies
+              such as React, Node.js, Express, and database systems. My
+              background in public health gives me a unique advantage in
+              understanding user needs, designing meaningful applications, and
+              delivering technology-driven solutions that create positive social
+              impact.
             </motion.p>
           </motion.div>
 
@@ -168,13 +175,15 @@ export default function About() {
                 </motion.li>
               </ul>
 
-              <div className= {`${styles.resumeWrapper} d-flex flex-wrap gap-2`}>
+              <div className={`${styles.resumeWrapper} d-flex flex-wrap gap-2`}>
                 <motion.a
-                  href="/resume.pdf"
+                  href={resume}
                   download="Berhanu_Mengesha_Resume.pdf"
                   className={`${styles.downloadBtn} btn btn-primary rounded-pill`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FaDownload className="me-2" />
                   Download CV

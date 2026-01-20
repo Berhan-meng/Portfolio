@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css";
 import { useState, useEffect } from "react";
 import { HiOutlineArrowUp } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -30,9 +31,9 @@ export default function Footer() {
             <div className="col-lg-6 text-center text-lg-start">
               <p className={styles.copyright}>
                 Copyright © {new Date().getFullYear()}{" "}
-                <a href="#" className={styles.copyrightLink}>
+                <Link href="/home" className={styles.copyrightLink}>
                   Berhanu Mengesha
-                </a>
+                </Link>
                 . All Rights Reserved.
               </p>
             </div>
@@ -41,15 +42,9 @@ export default function Footer() {
             <div className="col-lg-6">
               <ul className={`${styles.footerNav} nav`}>
                 <li className={styles.footerNavItem}>
-                  <a
-                    className={styles.footerNavLink}
-                    data-bs-toggle="modal"
-                    data-bs-target="#terms-policy"
-                    href="#"
-                    onClick={(e) => e.preventDefault()}
-                  >
+                  <Link className={styles.footerNavLink} to="/terms">
                     Terms & Policy
-                  </a>
+                  </Link>
                 </li>
                 <li className={styles.footerNavItem}>
                   <a

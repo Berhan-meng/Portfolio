@@ -1,7 +1,7 @@
 /* Layout/Section Styles */
 .section {
   position: relative;
-  padding: 0.5rem 0;
+  padding: 2rem 0;
   overflow: hidden;
 }
 .headingWrapper {

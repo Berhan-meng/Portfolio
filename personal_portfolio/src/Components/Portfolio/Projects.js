@@ -5,40 +5,47 @@ import drumkit from "../../Assets/drum_kit.png";
 import rockpaperscissor from "../../Assets/rock_paper_scissor.png";
 export const projects = [
   {
-    title: "Netflix-Clone",
+    title: "Streaming-Demo",
     category: "React Js",
     image:
       "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2024/04/p-1-91108938-netflix-reasserts-dominance-new-model.jpg",
-    link: "https://berhan-meng.github.io/Netflix-clone-2025/",
+    link: "https://streaming-demo.birhann.com/",
+    github: "https://github.com/Berhan-meng/movie_streaming_Demo/commits/main/",
   },
+
   {
-    title: "Amazon-Ecommerce-clone",
-    category: "React Js",
+    title: "Ecommerce-web app",
+    category: "Full Stack Web App",
     image: amazoneimage,
-    link: "https://amazoneclone.birhann.com/",
+    link: "https://ecommerce-demo-mocha.vercel.app/",
+    github: "https://github.com/Berhan-meng/ecommerce-demo",
   },
   {
     title: "Evangadi Forum",
-    category: "React Js",
+    category: "Full-Stack Web App",
     image: evangadiforum,
     link: "https://evangadiforum.birhann.com/",
+    github: "https://github.com/Berhan-meng/evangadi-forum",
   },
   {
     title: "Rock-paper-Scissor Game",
     category: "JS/DOM",
     image: rockpaperscissor,
     link: "https://birhan-m-rock-paper-scisor-game.netlify.app/",
+    github: "https://github.com/yourusername/amazon-clone",
   },
   {
     title: "Drum-kit",
     category: "JS-DOM",
     image: drumkit,
     link: "https://birhan-m-drum-kit.netlify.app/",
+    github: "https://github.com/yourusername/amazon-clone",
   },
   {
     title: "YouTube-Clone",
     category: "HTML/CSS",
     image: youtubeimg,
     link: "https://birhanm-youtube-clone.netlify.app",
+    github: "https://github.com/yourusername/amazon-clone",
   },
 ];

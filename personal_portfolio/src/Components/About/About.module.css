@@ -2,7 +2,7 @@
 
 .section {
   position: relative;
-  padding: 2rem 0;
+  padding: 1rem 0;
   overflow: hidden;
 }
 
@@ -90,6 +90,7 @@
   color: #4c4d4d;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
+ text-align: justify;
 }
 
 /* Personal Info */

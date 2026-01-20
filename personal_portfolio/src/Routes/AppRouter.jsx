@@ -7,6 +7,7 @@ import Portfolio from "../Components/Portfolio/Portfolio.jsx";
 import Contact from "../Components/Contact/Contact.jsx";
 import Resume from "../Components/Resume/Resume.jsx";
 import Testimonials from "../Components/Testimoinals/Testimonials.jsx";
+import TermsAndPrivacy from "../Components/Footer/TermsAndPrivacy/TermsAndPrivacy.jsx";
 
 export default function AppRouter() {
   return (
@@ -19,6 +20,7 @@ export default function AppRouter() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/terms" element={<TermsAndPrivacy />} />
       </Route>
     </Routes>
   );

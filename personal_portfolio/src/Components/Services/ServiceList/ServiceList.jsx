@@ -12,7 +12,6 @@ export default function ServiceList() {
                 <div
                   key={i}
                   className={styles.serviceItem}
-                  // style={{ '--item-index': i } as React.CSSProperties}
                 >
                   <div className={styles.featuredBox}>
                     <div className={styles.featuredBoxIcon}>

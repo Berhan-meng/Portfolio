@@ -14,7 +14,7 @@ export default function App() {
     // Simulate loading time (or wait for real data)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 800);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, []);

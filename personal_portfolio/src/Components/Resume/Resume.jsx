@@ -3,7 +3,12 @@ import Education from "./Education/Education.jsx";
 import Experience from "./Experience/Experience.jsx";
 import Skills1 from "./Skills/skills1.jsx";
 import Skills2 from "./Skills/skills2.jsx";
-import styles from "./Resume.module.css"; 
+import styles from "./Resume.module.css";
+import resume from "../../assets/Supportive_Docs/Berhanu_Mengesha_Resume.pdf";
+import credentials from "../../assets/Supportive_Docs/Berhanu_Mengesha_Credentials.pdf";
+import experience from "../../assets/Supportive_Docs/Berhanu_Mengesha_Experience.pdf";
+import certificates from "../../assets/Supportive_Docs/Berhanu_Mengesha_Certificates.pdf";
+import { FaDownload, FaArrowDown } from "react-icons/fa";
 
 export default function Resume() {
   return (
@@ -37,7 +42,6 @@ export default function Resume() {
             />
           </motion.p>
         </div>
-
         {/* Cards & Skills */}
         <div className="row gx-5">
           <Education />
@@ -49,14 +53,49 @@ export default function Resume() {
         </div>
 
         {/* Download CV */}
-        <div className="text-center mt-5">
+        <h2>Download Supportive Docs</h2>
+        <div className={`${styles.docsContainer} text-center mt-3 mb-5 mx-0`}>
           <a
-            href="/resume.pdf"
+            href={resume}
             target="_blank"
             rel="noopener noreferrer"
+            download="Berhanu_Mengesha_Resume.pdf"
             className={`rounded-pill shadow-none ${styles.btn}`}
           >
+            <FaDownload className="me-2" />
             Download CV
+          </a>
+          <a
+            href={credentials}
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Berhanu_Mengesha_Credentials.pdf"
+            className={`rounded-pill shadow-none ${styles.btn}`}
+          >
+            <FaDownload className="me-2" />
+            Credentials
+          </a>
+
+          <a
+            href={experience}
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Berhanu_Mengesha_Experience.pdf"
+            className={`rounded-pill shadow-none ${styles.btn}`}
+          >
+            <FaDownload className="me-2" />
+            Experience
+          </a>
+
+          <a
+            href={certificates}
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Berhanu_Mengesha_Certificates.pdf"
+            className={`rounded-pill shadow-none ${styles.btn}`}
+          >
+            <FaDownload className="me-2" />
+            Certificates
           </a>
         </div>
       </div>

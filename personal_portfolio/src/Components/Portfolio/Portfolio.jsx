@@ -1,10 +1,11 @@
 import styles from "./Portfolio.module.css";
 import { motion } from "framer-motion";
 import { projects } from "./Projects.js";
+import { FaGithub } from "react-icons/fa";
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className={`section bg-light ${styles.portfolio}`}>
+    <section className={`section bg-light ${styles.portfolio}`}>
       <div className="container">
         {/* ===== Heading ===== */}
         <div
@@ -36,7 +37,7 @@ export default function Portfolio() {
         </div>
 
         {/* ===== Portfolio Grid ===== */}
-        <div className="row g-4">
+        {/* <div className="row g-4">
           {projects.map((project, idx) => (
             <div key={idx} className="col-sm-6 col-lg-4">
               <motion.div
@@ -60,6 +61,54 @@ export default function Portfolio() {
                     <div className={styles.portfolioOverlayDetails}>
                       <h5 className="text-white fw-400">{project.title}</h5>
                       <span className="text-light">{project.category}</span>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          ))}
+        </div> */}
+
+        <div className="row g-4">
+          {projects.map((project, idx) => (
+            <div key={idx} className="col-sm-6 col-lg-4">
+              <motion.div
+                className={styles.portfolioBox}
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className={styles.portfolioImg}>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="img-fluid d-block rounded portfolio_img"
+                  />
+                  <div className={styles.portfolioOverlay}>
+                    <div className={styles.portfolioOverlayDetails}>
+                      <h5 className="text-white fw-400">{project.title}</h5>
+                      <span className="text-light">{project.category}</span>
+                      <div className="d-flex gap-3 mt-3">
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-sm btn-primary"
+                        >
+                          Live Demo
+                        </a>
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`${styles.githubLinc_container} btn btn-sm btn-outline-light`}
+                        >
+                          <FaGithub
+                            className={styles.githubLink}
+                            title="Github Source Code"
+                          />
+                          Source Code
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

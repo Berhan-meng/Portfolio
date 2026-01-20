@@ -3,9 +3,8 @@ import { ReactTyped } from "react-typed";
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 import heroImage from "../../assets/bc1.jpg";
-import { HiOutlineArrowSmDown } from "react-icons/hi";
 import { FaDownload, FaArrowDown } from "react-icons/fa";
-
+import resume from "../../assets/Supportive_Docs/Berhanu_Mengesha_Resume.pdf";
 
 const MotionLink = motion.create(Link);
 
@@ -105,24 +104,23 @@ export default function Home() {
                     View Projects
                   </Link>
 
-                  <Link
-                    to="/resume.pdf"
+                  <a
                     className={styles.btnOutlineLight}
-                    // className={styles.btnOutlinePrimary}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Download Resume PDF"
+                    href={resume}
+                    download="Berhanu_Mengesha_Resume.pdf"
                   >
                     <FaDownload className="me-2" />
                     Download CV
-                  </Link>
+                  </a>
                 </motion.div>
               </div>
             </div>
           </div>
 
           {/* ===== Scroll Down Arrow ===== */}
-          <MotionLink
+          {/* <MotionLink
             to="/about"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -131,9 +129,9 @@ export default function Home() {
             aria-label="Go to About Page"
           >
             <span className={styles.animated}>
-              <FaArrowDown title="Back to Top" />
+              <FaArrowDown title="Go to Bottom" />
             </span>
-          </MotionLink>
+          </MotionLink> */}
         </div>
       </div>
     </section>

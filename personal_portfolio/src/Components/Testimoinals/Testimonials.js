@@ -1,36 +1,39 @@
- const testimonials = [
-   {
-     id: 1,
-     name: "Dennis Jacques",
-     role: "User from USA",
-     image: "images/testimonial/client-sm-3.jpg",
-     text: "“Only trying it out since a few days. But up to now excellent. Seems to work flawlessly. priced simply dummy text of the printing and typesetting industry.”",
-     rating: 5,
-   },
-   {
-     id: 2,
-     name: "Jay Shah",
-     role: "Founder at Icomatic Pvt Ltd",
-     image: "images/testimonial/client-sm-1.jpg",
-     text: '"Easy to use, reasonably priced simply dummy text of the printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure."',
-     rating: 5,
-   },
-   {
-     id: 3,
-     name: "Patrick Cary",
-     role: "Freelancer from USA",
-     image: "images/testimonial/client-sm-2.jpg",
-     text: "“I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure.”",
-     rating: 5,
-   },
-   {
-     id: 4,
-     name: "Chris Tom",
-     role: "User from UK",
-     image: "images/testimonial/client-sm-4.jpg",
-     text: "“I have used them twice now. Good rates, very efficient service and priced simply dummy text of the printing and typesetting industry quidam interesset his et. Excellent.”",
-     rating: 5,
-   },
- ];
+import tesfishpic from "../../assets/Testimonials/Tesfaye.jpg";
+import henipic from "../../assets/Testimonials/Henok.jpg";
+import gedex from "../../assets/Testimonials/Gedefaw.jpg";
+const testimonials = [
+  {
+    id: 1,
+    name: "Hennok Legesse",
+    role: "Area Manager at GOAL Ethiopia",
+    image: henipic,
+    text: "“Berhanu Mengesha is a dedicated chief public health professional with over nine years of experience in disease prevention and child malnutrition treatment. His strong academic background and practical expertise enable him to deliver effective, compassionate, and community-focused health solutions.”",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Tsfaye Getahun",
+    role: "Project Manager at GOAL Ethioipa",
+    image: tesfishpic,
+    text: '"As a trained project management professional, Berhanu has proven his ability to plan, manage, and successfully implement complex projects. He is highly organized, detail-oriented, and skilled at coordinating teams to achieve measurable and sustainable results."',
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Gedefaw Alemnew",
+    role: "LAF Officer at GOAL Ethiopia",
+    image: gedex,
+    text: "“Berhanu is a passionate technology enthusiast who has completed full stack web application development training to complement his health background. His ability to combine healthcare knowledge with modern software development makes him an innovative problem solver in digital health.”",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "Lemma Eshetu",
+    role: "H & N program Manager at Action Aginst Hunger",
+    image: "images/testimonial/client-sm-4.jpg",
+    text: "“Berhanu is known for his strong work ethic, integrity, and commitment to continuous learning and professional growth. He is a reliable and adaptable professional who consistently strives to create meaningful impact through his skills and experience.”",
+    rating: 5,
+  },
+];
 
-export default testimonials ;
+export default testimonials;
