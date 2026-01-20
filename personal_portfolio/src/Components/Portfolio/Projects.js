@@ -10,7 +10,7 @@ export const projects = [
     image:
       "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2024/04/p-1-91108938-netflix-reasserts-dominance-new-model.jpg",
     link: "https://streaming-demo.birhann.com/",
-    github: "https://github.com/Berhan-meng/movie_streaming_Demo/commits/main/",
+    github: "https://github.com/Berhan-meng/movie_streaming_Demo/",
   },
 
   {
