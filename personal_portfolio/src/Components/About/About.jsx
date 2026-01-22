@@ -175,23 +175,23 @@ export default function About() {
                 </motion.li>
               </ul>
 
-              <div className={`${styles.resumeWrapper} d-flex flex-wrap gap-2`}>
+              <div className={`${styles.resumeWrapper} flex-wrap gap-2`}>
                 <motion.a
                   href={resume}
                   download="Berhanu_Mengesha_Resume.pdf"
-                  className={`${styles.downloadBtn} btn btn-primary rounded-pill`}
+                  className={`${styles.downloadBtn} rounded-pill shadow-none`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaDownload className="me-2" />
-                  Download CV
+                  resume
                 </motion.a>
 
                 <motion.a
                   href="/contact"
-                  className={`${styles.contactBtn} btn btn-outline-primary rounded-pill`}
+                  className={`${styles.contactBtn} rounded-pill shadow-none`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
