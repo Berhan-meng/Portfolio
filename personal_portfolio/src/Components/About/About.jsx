@@ -110,7 +110,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <div className="ps-lg-4">
-              <ul className="list-unstyled">
+              <ul className="list-unstyled persenalinfoli">
                 <motion.li
                   className="mb-3"
                   initial={{ opacity: 0, x: 20 }}

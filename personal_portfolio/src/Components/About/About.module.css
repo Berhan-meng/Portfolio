@@ -147,9 +147,16 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .description {
+  .description{
     font-size: 1rem;
+    padding: 1rem 2rem;
   }
+  .resumeWrapper {
+ padding: 1rem 2rem;
+}
+.persenalinfoli {
+  padding: 1rem 2rem !important;
+}
 
   .downloadBtn,
   .contactBtn {

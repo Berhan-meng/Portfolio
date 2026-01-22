@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { ReactTyped } from "react-typed";
 import { Link } from "react-router-dom";
+import { ReactTyped } from "react-typed";
 import styles from "./Home.module.css";
 import heroImage from "../../assets/bc1.jpg";
 import { FaDownload, FaArrowDown } from "react-icons/fa";
 import resume from "../../assets/Supportive_Docs/Berhanu_Mengesha_Resume.pdf";
 
-const MotionLink = motion.create(Link);
+const MotionLink = motion(Link);
 
 export default function Home() {
   return (
@@ -118,20 +118,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* ===== Scroll Down Arrow ===== */}
-          {/* <MotionLink
-            to="/about"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.2 }}
-            className={styles.scrollDownArrow}
-            aria-label="Go to About Page"
-          >
-            <span className={styles.animated}>
-              <FaArrowDown title="Go to Bottom" />
-            </span>
-          </MotionLink> */}
         </div>
       </div>
     </section>

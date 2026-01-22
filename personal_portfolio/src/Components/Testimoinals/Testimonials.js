@@ -1,14 +1,14 @@
 import tesfishpic from "../../assets/Testimonials/Tesfaye.jpg";
 import henipic from "../../assets/Testimonials/Henok.jpg";
 import gedex from "../../assets/Testimonials/Gedefaw.jpg";
-import lemmish from "../../assets/Testimonials/lemma.jpg"
+import lemmish from "../../assets/Testimonials/lemma.jpg";
 const testimonials = [
   {
     id: 1,
-    name: "Hennok Legesse",
+    name: "Henok Legesse",
     role: "Area Manager at GOAL Ethiopia",
     image: henipic,
-    text: "“Berhanu Mengesha is a dedicated chief public health professional with over nine years of experience in disease prevention and child malnutrition treatment. His strong academic background and practical expertise enable him to deliver effective, compassionate, and community-focused health solutions.”",
+    text: "“Berhanu Mengesha is a dedicated public health professional with over nine years of experience working in government health facilities and international humanitarian organizations. He has strong expertise in leading multidisciplinary teams, coordinating emergency humanitarian activities, and delivering effective, compassionate, and community-focused health solutions.”",
     rating: 5,
   },
   {
