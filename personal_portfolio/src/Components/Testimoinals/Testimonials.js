@@ -1,6 +1,7 @@
 import tesfishpic from "../../assets/Testimonials/Tesfaye.jpg";
 import henipic from "../../assets/Testimonials/Henok.jpg";
 import gedex from "../../assets/Testimonials/Gedefaw.jpg";
+import lemmish from "../../assets/Testimonials/lemma.jpg"
 const testimonials = [
   {
     id: 1,
@@ -30,7 +31,7 @@ const testimonials = [
     id: 4,
     name: "Lemma Eshetu",
     role: "H & N program Manager at Action Aginst Hunger",
-    image: "images/testimonial/client-sm-4.jpg",
+    image: lemmish,
     text: "“Berhanu is known for his strong work ethic, integrity, and commitment to continuous learning and professional growth. He is a reliable and adaptable professional who consistently strives to create meaningful impact through his skills and experience.”",
     rating: 5,
   },

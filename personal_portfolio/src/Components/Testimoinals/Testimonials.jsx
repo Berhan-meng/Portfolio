@@ -26,7 +26,7 @@ export default function Testimonials() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-dark fw-semibold position-absolute w-100 align-self-center mb-0"
           >
-            What Clients Say
+            What Coleagues Say
             <motion.span
               initial={{ width: 0 }}
               whileInView={{ width: "80px" }}
