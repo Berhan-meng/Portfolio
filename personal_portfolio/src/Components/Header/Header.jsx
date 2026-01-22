@@ -1,123 +1,105 @@
+import { useState } from "react";
 import styles from "./Header.module.css";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import profileimg from "../../assets/Birhan.jpg";
 
 export default function Header() {
+  const [showDisclaimer, setShowDisclaimer] = useState(false);
+
   return (
-    <header id="header" className={`sticky-top ${styles.header}`}>
-      <nav className="primary-menu navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
-          <Link to="/" className={`navbar-brand ${styles.navbarBrand}`}>
-            <span className="bg-dark-2 rounded-pill p-2 mb-lg-1 d-lg-inline-block">
-              <img
-                className={`${styles.profileimg} img-fluid rounded-circle`}
-                src={profileimg}
-                title="I'm Birhan"
-                alt=""
-              />
-            </span>
-            Berhanu Mengesha
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#header-nav"
-            aria-controls="header-nav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    <>
+      <header className={`sticky-top ${styles.header} header`}>
+        <nav className="primary-menu navbar navbar-expand-lg navbar-dark bg-dark">
+          <div className="container-fluid">
+            <div
+              className={`navbar-brand ${styles.navbarBrand}`}
+              onClick={() => setShowDisclaimer(true)}
+              style={{ cursor: "pointer" }}
+            >
+              <span className="bg-dark-2 rounded-pill p-2 mb-lg-1 d-lg-inline-block">
+                <img
+                  className={`${styles.profileimg} img-fluid rounded-circle`}
+                  src={profileimg}
+                  title="I'm Berhanu"
+                  alt="Profile"
+                />
+              </span>
+              Berhanu Mengesha
+            </div>
+
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#header-nav"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="header-nav" className="collapse navbar-collapse">
+              <ul className="navbar-nav ms-auto">
+                {[
+                  ["Home", "/"],
+                  ["About", "/about"],
+                  ["Resume", "/resume"],
+                  ["Services", "/services"],
+                  ["Portfolio", "/projects"],
+                  ["Testimonials", "/testimonials"],
+                  ["Contact", "/contact"],
+                ].map(([label, path]) => (
+                  <li className="nav-item" key={path}>
+                    <NavLink
+                      to={path}
+                      end
+                      className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                      }
+                    >
+                      {label}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      {/* ===== MODAL ===== */}
+      {showDisclaimer && (
+        <div
+          className={styles.modalOverlay}
+          onClick={() => setShowDisclaimer(false)}
+        >
+          <div
+            className={styles.modalContent}
+            onClick={(e) => e.stopPropagation()}
           >
-            <span className="navbar-toggler-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </button>
-          <div id="header-nav" className="collapse navbar-collapse">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <NavLink
-                  to="/"
-                  end
-                  className={({ isActive }) =>
-                    isActive
-                      ? `nav-link active ${styles.navLink}`
-                      : `nav-link ${styles.navLink}`
-                  }
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/about"
-                  className={({ isActive }) =>
-                    isActive
-                      ? `nav-link active ${styles.navLink}`
-                      : `nav-link ${styles.navLink}`
-                  }
-                >
-                  About
-                </NavLink>
-              </li>
+            <img
+              src={profileimg}
+              className="img-fluid rounded-circle mb-3"
+              width="120"
+              alt=""
+            />
 
-              <li className="nav-item">
-                <NavLink
-                  to="/resume"
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
-                >
-                  Resume
-                </NavLink>
-              </li>
+            <h3> I'M Berhanu Mengesha</h3>
+            <p>
+              I’m Berhanu Mengesha, a Full Stack Developer with a strong
+              foundation in Public Health and Project Management. I transitioned
+              into software development with a clear goal to build practical
+              digital solutions that address real-world challenges, especially
+              in the healthcare sector.
+            </p>
 
-              <li className="nav-item">
-                <NavLink
-                  to="/services"
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
-                >
-                  Services
-                </NavLink>
-              </li>
-
-              <li className="nav-item">
-                <NavLink
-                  to="/projects"
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
-                >
-                  Portfolio
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/testimonials"
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
-                >
-                  Testimonials
-                </NavLink>
-              </li>
-
-              <li className="nav-item">
-                <NavLink
-                  to="/contact"
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
-                >
-                  Contact
-                </NavLink>
-              </li>
-            </ul>
+            <button
+              className="btn btn-dark"
+              onClick={() => setShowDisclaimer(false)}
+            >
+              Close
+            </button>
           </div>
         </div>
-      </nav>
-    </header>
+      )}
+    </>
   );
 }
