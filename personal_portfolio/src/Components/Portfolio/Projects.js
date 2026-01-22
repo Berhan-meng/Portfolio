@@ -29,10 +29,10 @@ export const projects = [
   },
   {
     title: "Rock-paper-Scissor Game",
-    category: "JS/DOM",
+    category: "JS-DOM",
     image: rockpaperscissor,
-    link: "https://birhan-m-rock-paper-scisor-game.netlify.app/",
-    github: "https://github.com/yourusername/amazon-clone",
+    link: "https://js-dom-flax.vercel.app/",
+    github: "https://github.com/Berhan-meng/JS-DOM/",
   },
   {
     title: "Drum-kit",
@@ -45,7 +45,7 @@ export const projects = [
     title: "YouTube-Clone",
     category: "HTML/CSS",
     image: youtubeimg,
-    link: "https://birhanm-youtube-clone.netlify.app",
-    github: "https://github.com/yourusername/amazon-clone",
+    link: "https://you-tube-html-css.vercel.app/",
+    github: "https://github.com/Berhan-meng/YouTube-HTML-CSS",
   },
 ];
