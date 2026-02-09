@@ -24,7 +24,7 @@ export const projects = [
     title: "Evangadi Forum",
     category: "Full-Stack Web App",
     image: evangadiforum,
-    link: "https://evangadiforum.birhann.com/",
+    link: "https://birhanevangadiforum.birhann.com/",
     github: "https://github.com/Berhan-meng/evangadi-forum",
   },
   {
