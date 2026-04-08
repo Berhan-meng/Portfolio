@@ -1,4 +1,4 @@
-import amazoneimage from "../../Assets/Amazon4.png";
+import amazoneimage from "../../assets/Amazon4.png";
 import evangadiforum from "../../Assets/evangadi.png";
 import youtubeimg from "../../Assets/youtubeclone.png";
 import drumkit from "../../Assets/drum_kit.png";
