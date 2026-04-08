@@ -1,8 +1,8 @@
 import amazoneimage from "../../assets/Amazon4.png";
-import evangadiforum from "../../Assets/evangadi.png";
-import youtubeimg from "../../Assets/youtubeclone.png";
-import drumkit from "../../Assets/drum_kit.png";
-import rockpaperscissor from "../../Assets/rock_paper_scissor.png";
+import evangadiforum from "../../assets/evangadi.png";
+import youtubeimg from "../../assets/youtubeclone.png";
+import drumkit from "../../assets/drum_kit.png";
+import rockpaperscissor from "../../assets/rock_paper_scissor.png";
 export const projects = [
   {
     title: "Streaming-Demo",
