@@ -1,6 +1,6 @@
 import { skills2 } from "./skills.js";
 import { motion } from "framer-motion";
-import styles from "./Skills.module.css";
+import styles from "./skills.module.css";
 
 export default function Skills2() {
   return (
